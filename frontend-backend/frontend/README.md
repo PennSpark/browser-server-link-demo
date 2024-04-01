@@ -1,3 +1,14 @@
+# Authentication with Supabase
+
+To get it started and running, follow the steps (here)[https://supabase.com/docs/guides/auth/quickstarts/react] and refer to the
+code used in App.js of the frontend folder of this repo.
+
+Things to note:
+1. Remember to create your own shared supabase account for each group.
+2. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
