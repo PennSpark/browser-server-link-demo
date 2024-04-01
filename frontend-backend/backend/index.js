@@ -1,9 +1,11 @@
 const express = require('express');
-var cors = require('cors')
 const app = express();
 const port = 3000;
 
 app.use(express.json());
+
+// bad practice but for the sake of the demo
+var cors = require('cors')
 app.use(cors())
 
 let notes = [
@@ -13,18 +15,17 @@ let notes = [
 ];
 
 app.get('/api/notes', (req, res) => {
-    console.log("Called GET /notes")
     res.json(notes);
 });
 
 app.post('/api/notes', (req, res) => {
     const { note } = req.body;
-    console.log(`New note: ${note}`);
+    console.log(`New note received on the server: ${note}`);
     res.sendStatus(200);
 });
 
 app.use(express.static("build"));
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });

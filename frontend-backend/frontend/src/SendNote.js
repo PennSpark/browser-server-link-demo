@@ -8,6 +8,7 @@ function SendNote() {
     e.preventDefault();
     console.log("Sending note: " + note)
     try {
+        console.log("I am running in the browser");
         const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/api/notes', {
             method: "POST",
             headers: {
