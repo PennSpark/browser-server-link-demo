@@ -1,11 +1,13 @@
 # Authentication with Supabase
 
-To get it started and running, follow the steps (here)[https://supabase.com/docs/guides/auth/quickstarts/react] and refer to the
+To get it started and running, follow the steps [here](https://supabase.com/docs/guides/auth/quickstarts/react) and refer to the
 code used in App.js of the frontend folder of this repo.
 
 Things to note:
 1. Remember to create your own shared supabase account for each group.
-2. 
+2. Create a .env file to store your secrets. Do NOT EVER push this file (git add each file invidivually, NO MORE "git add .").
+3. As an extension, set up gmail or other authentication. (go search the guides on how to do that - its just registering the app on google).
+4. You might want to disable email verification due to the rate limit. This is in dashboard -> authentication -> providers -> email -> confirm email (click disable)
 
 
 
